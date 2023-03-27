@@ -1,0 +1,341 @@
+html {
+    font-family: "vazir";
+    font-size: 80%;
+    font-weight: 300px;
+    min-width: 650px;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #2f3542;
+
+}
+
+header .navbar li {
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.navbar .logo {}
+
+header .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+header .navbar a:hover {
+    opacity: .6;
+}
+
+header .sub-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 20px 15px;
+}
+
+.sub-nav .right-sub-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-sub-nav-product-searchBox{
+    display: flex;
+    margin-right: 0;
+}
+
+.sub-nav .right-sub-nav a,
+.right-sub-nav input {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.right-sub-nav .product-btn{
+    align-content: center;
+    padding: 4px 18px;
+    background-color: #1e90ff;
+    border-radius: 3px;
+    color: white;
+}
+
+.right-sub-nav .product-btn:hover{
+    background-color: #1462af;
+}
+.right-sub-nav .search-box{
+    padding: 6px;
+    inline-size: 250px;
+    border: 1px solid rgba(133, 133, 133, 0.356);
+    border-radius: 0 3px 3px 0 ;
+    margin-left: 0px;
+}
+
+.right-sub-nav .search-box::placeholder {
+    color: rgb(175, 175, 175);
+    font-size: 10px;
+}
+
+
+header .sub-nav .right-sub-nav .right-sub-nav-product-searchBox button{
+    border: none;    
+    border-radius: 3px 0 0 3px;
+    padding: 6px 8px;
+    margin-right: 0;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+header .sub-nav .left-sub-nav i {
+    margin-left: 10px;
+}
+
+header .sub-nav .left-sub-nav button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    justify-content: right;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #2ed573;
+}
+
+header .sub-nav .left-sub-nav span{
+    color: white;
+    background-color: #ffffff4d;
+    padding: 5px 8px 1.5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+header .sub-nav .left-sub-nav button:hover{
+    color: white;
+    background-color: #219b54;
+}
+
+
+header .special-suggest-slider .ss-slider{
+    display: flex;
+    align-items: center;
+    height: 330px;
+    background-size: cover !important;
+    z-index: 0;
+}
+
+.special-suggest-slider{
+    margin-bottom: 40px;
+}
+
+.special-suggest-slider-inner-items{
+    margin-right: 10%;
+}
+
+.special-suggest-slider-inner-items button{
+    margin-bottom: 5%;
+    border: none;
+    background-color: #71606A;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.special-suggest-slider-inner-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+
+.special-suggest-info{
+    background-color: #f2f2ea5e;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.special-suggest-info:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.special-suggest-button:hover{
+    opacity: 90%;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    body{
+        /* height: auto; */
+        width: 425px;
+    }
+    header .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    header .right-section,
+    .left-section {
+        width: 100%;
+        height: auto;
+        
+    }
+    header .right-section li,.left-section li{
+        margin-bottom: 1px;
+        margin-right: 12px;
+        padding: 8px;        
+    }
+
+    header .right-sub-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        margin-top: 5%;
+    }
+    
+    .right-sub-nav-product-btn{
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    .right-sub-nav-product-searchBox{
+        margin-top: 40px;
+    }
+
+
+
+
+    #slider-ss{
+        width: 100%;
+        display: none;
+    }
+
+
+}
+
+
+
+/*
+در این قسمت استایل پیشنهادهای ویژه قرار داده شده
+*/
+
+.special-suggest-head-title{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.special-suggest-head-title .title{
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+
+.all-suggestions{
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+
+
+article .special-suggest-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.special-suggest-content-price .old-price{
+    text-decoration: line-through;
+    color: red;
+}
+.special-suggest-content-price .new-price{
+    color: green;
+}
+
+.special-suggest-content{
+    display: flex;
+    align-content: flex-start;
+
+
+    border: red solid 5px;
+}
+/* .special-suggest-content .special-suggest-content-images{
+    border: solid rgba(128, 128, 128, 0.336) 1px;
+    padding: 20px 3px;
+    margin-bottom: 20px;
+    /* display: flex;
+    justify-content: flex-end;
+}
+
+.special-suggest-content-images img{
+    height: 220px;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
